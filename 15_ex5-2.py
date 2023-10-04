@@ -9,6 +9,8 @@
 list1 = [int(input("첫번쨰 수를 입력하세요. ")), int(input("두번째 수를 입력하세요."))]
 #합계 변수 초기화
 sum,sum2 = 0,0
+#수가 거꾸로 되어있다면 고치기
+if list1[1] < list1[0]: list1[0], list1[1] = list1[1], list1[0]
 #첫번쨰 수부터 두번쨰 수까지 반복하면서
 for i in range(list1[0], list1[1] + 1):
     #i를 합계 변수에 더하기
